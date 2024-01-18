@@ -1,0 +1,35 @@
+.modalContainer {
+  @apply hidden lg:fixed left-0 top-0 bottom-0 w-2/4 h-full bg-black z-50 opacity-40 lg:flex justify-end;
+}
+
+.notificationContainer {
+  @apply bg-white w-screen h-screen pt-7 lg:w-2/4 z-50 fixed top-0 lg:top-0 right-0;
+}
+
+.checkOutContainer {
+  @apply flex flex-col py-9 px-4 lg:px-8 lg:absolute bottom-0 w-full bg-white border-t border-t-[#F5F5F5] z-50 fixed;
+}
+
+.checkOutButton {
+  @apply py-2 px-10 md:px-20 border border-black rounded-3xl cursor-pointer font-poppins font-normal text-xs;
+}
+
+.itemsContainer {
+  @apply flex flex-col h-full
+}
+
+.scrollContainer {
+  @apply flex flex-col gap-8 overflow-y-scroll mt-4 mb-16 md:my-14 mx-4 h-[300px];
+}
+
+.subAmount {
+  @apply flex items-center justify-between pb-7;
+}
+
+.closeIcon {
+  @apply cursor-pointer;
+}
+
+.cartItems {
+  @apply overflow-y-scroll;
+}

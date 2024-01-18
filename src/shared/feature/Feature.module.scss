@@ -1,0 +1,15 @@
+.featureContainer {
+  @apply bg-[#FAF4F4] flex items-center mt-20 lg:my-[92px] py-24 px-[100px];
+}
+
+.featureContainer {
+    @apply flex flex-col items-start lg:items-start gap-12 lg:flex-row px-4 py-10 mb-0  lg:py-24 lg:px-16
+}
+
+.featureHeader {
+  @apply text-black text-2xl lg:text-3xl font-poppins font-medium;
+}
+
+.featureDesc {
+  @apply text-[#9F9F9F] text-base lg:text-xl font-poppins font-normal;
+}

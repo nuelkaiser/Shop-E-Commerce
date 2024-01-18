@@ -1,0 +1,11 @@
+.productImg {
+  @apply w-80 h-52 ;
+}
+
+.productName {
+  @apply text-sm lg:text-base text-black font-poppins font-normal mt-5 mb-3;
+}
+
+.productPrice {
+  @apply text-black max-[375px]:text-base text-xl lg:text-2xl font-medium font-poppins;
+}

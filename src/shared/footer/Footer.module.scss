@@ -1,0 +1,60 @@
+.overAllContainer {
+  @apply pb-10 px-6 xl:px-[100px] bg-white;
+}
+
+.footerContainer {
+  @apply flex flex-col lg:flex-row lg:items-center justify-between gap-10 lg:gap-12 min-[1440px]:gap-32 pt-24;
+}
+
+.container {
+  @apply flex  flex-col lg:flex-row items-start gap-20;
+}
+
+.mobileLogo {
+  @apply bg-[#E54777] blur-[2px] w-16 h-6 mb-4 lg:hidden;
+}
+
+.footerInnerContainer {
+  @apply flex items-start max-[768px]:justify-between  max-[768px]:w-full lg:gap-8 max-[1440px]:gap-32;
+}
+
+.footerAddress,
+.footerLinksHeader {
+  @apply text-[#9F9F9F] text-base font-poppins font-normal;
+}
+
+.footerAddress {
+  @apply w-[285px];
+}
+
+.footerLinksContainer {
+  @apply flex flex-col gap-11;
+}
+
+.footerLinks {
+  @apply text-black text-base font-poppins font-normal cursor-pointer;
+}
+
+.linksContainer {
+  @apply flex flex-col gap-14;
+}
+
+.emailContainer {
+  @apply flex items-center gap-2;
+}
+
+.footerEmailAddress {
+  @apply text-[#9F9F9F] text-sm font-poppins font-normal underline flex;
+}
+
+.footerSubscribe {
+  @apply text-black text-sm font-poppins font-medium underline cursor-pointer;
+}
+
+.footerCopyRight {
+  @apply bg-[#D9D9D9] w-full mt-24 mb-4 lg:my-9;
+}
+
+.copyRight {
+  @apply text-base text-black font-poppins font-normal;
+}

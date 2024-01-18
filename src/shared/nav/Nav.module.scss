@@ -1,0 +1,47 @@
+.navContainer {
+  @apply flex items-center justify-between py-5 px-6 lg:justify-end md:gap-24 lg:pr-24;
+}
+
+.navLinksContainer {
+  @apply md:flex items-center gap-11 bg-white hidden;
+}
+
+.navLinks {
+  @apply text-base text-black font-poppins font-normal cursor-pointer;
+}
+
+.navIconsContainer {
+  @apply flex items-center gap-5 md:gap-10;
+}
+
+.navIcons {
+    @apply cursor-pointer;
+}
+
+.mobileHamContainer {
+  @apply flex items-center gap-2 md:hidden;
+}
+
+.hamburger {
+  @apply cursor-pointer;
+}
+
+.mobileLogo {
+  @apply bg-[#E54777] blur-[2px] w-16 h-6;
+}
+
+.openMobileMenu {
+  @apply bg-white fixed z-50 top-0 left-0 bottom-0 right-0 px-6 flex flex-col py-10;
+}
+
+.closeMobileMenu {
+  @apply top-0 ease-linear;
+}
+
+.closed {
+  @apply my-5 ml-6;
+}
+
+.mobileNavLinks {
+  @apply p-4 font-medium font-poppins text-black text-base border-b border-b-[#D7D7D7] cursor-pointer;
+}
