@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project 
 
 ## Getting Started
 
-Firstly, change directory to "shop-com":
+Firstly, change directory to "shop-com" afterwards,
 run command yarn to install the necessary packages and then yarn dev to start up the application on localhost:3000
 
 commands:
