@@ -1,40 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project 
 
 ## Getting Started
 
-First, run the development server:
+Firstly, change directory to "shop-com" afterwards,
+run command yarn to install the necessary packages and then yarn dev to start up the application on localhost:3000
 
-```bash
-npm run dev
-# or
+commands:
+yarn,
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Redux Statemanagement
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Cart Slice:
 
-## Learn More
+Purpose: Keeps track of what's in the shopping cart.
+How: It stores an array of items in the cart, each having details like id, title, price, and images. It allows you to add items to the cart and remove them.
+Selectors: You can easily fetch the list of items in the cart and calculate the total amount spent on those items.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Modal Slice:
 
-## Deploy on Vercel
+Purpose: Handles the visibility of the cart modal.
+How: Manages whether the cart modal is open or closed. You can toggle this state when the user wants to view their cart.
+Selectors: You can check whether the modal is open or closed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Counter Slice:
+
+Purpose: Manages individual product quantities in the cart.
+How: It keeps track of how many of each product the user wants to buy. You can increase or decrease the quantity and reset it if needed.
+Selectors: You can get the current quantity of a specific product.
+In simple terms, the Cart Slice handles what's in the cart, the Modal Slice deals with showing or hiding the cart view, and the Counter Slice manages how many of each product you want. Together, these slices make sure your app knows what's in the cart, how much it costs, and provides a user-friendly way to interact with it.
+
+
+
+
+
+
+
+
+
+
+
+
