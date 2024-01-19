@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project 
+This is the Link to the Live App ([https://shopcom/](https://shop-e-commerce-ten.vercel.app/))
 
 ## Getting Started
 
