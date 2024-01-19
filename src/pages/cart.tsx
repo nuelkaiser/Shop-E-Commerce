@@ -179,7 +179,7 @@ export default function cart() {
               </p>
 
               <p className="text-[#B88E2F] max-[375px]:text-base text-xl font-medium font-poppins">
-                Rs. 250,000.00
+                &#8358; {counter * totalAmount}
               </p>
             </div>
 

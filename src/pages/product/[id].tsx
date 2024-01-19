@@ -11,8 +11,6 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/shared/product card/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper/core";
-import { Navigation } from "swiper/modules";
 import "swiper/css";
 import Cart from "@/shared/modals/cart/CartModal";
 import { useEffect, useState } from "react";
@@ -24,7 +22,6 @@ import {
   selectCounter,
   incrementCounter,
   decrementCounter,
-  setCounter,
 } from "@/store/quantity-store/CounterSlice";
 
 interface Product {
@@ -207,6 +204,8 @@ export default function product() {
                     slidesPerView={1}
                     onSlideChange={() => console.log("slide change")}
                     onSwiper={(swiper) => console.log(swiper)}
+                    pagination={{ clickable: true }}
+                    
                   >
                     {product.images.map((image, index) => (
                       <SwiperSlide>
