@@ -6,7 +6,7 @@ Firstly, change directory to "shop-com" afterwards,
 run command yarn to install the necessary packages and then yarn dev to start up the application on localhost:3000
 
 commands:
-yarn 
+yarn,
 yarn dev
 
 
@@ -21,11 +21,13 @@ How: It stores an array of items in the cart, each having details like id, title
 Selectors: You can easily fetch the list of items in the cart and calculate the total amount spent on those items.
 
 
+
 Modal Slice:
 
 Purpose: Handles the visibility of the cart modal.
 How: Manages whether the cart modal is open or closed. You can toggle this state when the user wants to view their cart.
 Selectors: You can check whether the modal is open or closed.
+
 
 
 Counter Slice:
