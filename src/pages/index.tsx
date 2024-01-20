@@ -17,7 +17,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await fetch("https://dummyjson.com/products"); 
-        const data = await response.json(); // Parse the JSON data
+        const data = await response.json(); 
 
         // Check if data has a "products" key and if it is an array
         if (Array.isArray(data.products)) {

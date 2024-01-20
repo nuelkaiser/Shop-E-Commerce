@@ -1,4 +1,3 @@
-// counterSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface CounterState {
@@ -6,7 +5,7 @@ interface CounterState {
 }
 
 const initialState: CounterState = {
-  value: 1,  // Initial state set to 1
+  value: 1,  
 };
 
 const counterSlice = createSlice({

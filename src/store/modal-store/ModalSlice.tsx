@@ -4,7 +4,7 @@ const initialState = {
   modal: false,
 };
 
-// Create the slice
+
 const modalSlice = createSlice({
   name: "modal",
   initialState,
@@ -15,9 +15,6 @@ const modalSlice = createSlice({
   },
 });
 
-// Export the action creator
+
 export const { setModal } = modalSlice.actions;
-
-
-// Export the reducer
 export default modalSlice.reducer;
