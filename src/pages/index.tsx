@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://dummyjson.com/products"); // Replace with your API endpoint
+        const response = await fetch("https://dummyjson.com/products"); 
         const data = await response.json(); // Parse the JSON data
 
         // Check if data has a "products" key and if it is an array
