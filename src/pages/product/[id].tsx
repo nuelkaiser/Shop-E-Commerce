@@ -33,8 +33,7 @@ interface Product {
   brand: string;
   images: string[];
   quantity: number;
-  subtotal: number
-  // Add other properties as needed
+  subtotal: number;
 }
 
 export default function product() {
@@ -55,18 +54,15 @@ export default function product() {
   };
 
   const handleAddToCart = () => {
-    // Check if product is not null
     if (product) {
       // Calculate the total price by multiplying the product price with the counter
       const totalPrice = product.price * counter;
-  
-      // Dispatch the addToCart action with the calculated total price
       dispatch(
         addToCart({
           id: product.id,
           title: product.title,
           price: product.price,
-          subtotal: totalPrice, // Use the calculated total price
+          subtotal: totalPrice,
           images: product.images,
           quantity: counter,
         })
@@ -75,12 +71,10 @@ export default function product() {
   };
 
   const handleViewMore = () => {
-    // Increment the number of products to display
     setDisplayCount((prevCount) => prevCount + 4);
   };
 
   const handleShowLess = () => {
-    // Decrement the number of products to display
     setDisplayCount((prevCount) => Math.max(prevCount - 4, 0));
   };
 
@@ -96,22 +90,15 @@ export default function product() {
   const handleDecrease = () => {
     dispatch(decrementCounter());
   };
-
-  // Reset the counter when handling addToCart
  
-
-  // Simulate fetching product data based on the id
   useEffect(() => {
     const fetchProductData = async () => {
       try {
-        // Replace this with your actual API endpoint to fetch product details
         const response = await fetch(`https://dummyjson.com/products/${id}`);
         const data = await response.json();
 
-        // Update the product state with the fetched data
         setProduct(data);
-
-        // Fetch related products based on the category of the selected product
+        
         const relatedResponse = await fetch(
           `https://dummyjson.com/products?category=${data.category}`
         );
@@ -121,14 +108,11 @@ export default function product() {
           setSelectedImage(data.images[0]);
         }
 
-        // Update the related products state
         setRelatedProducts(relatedData.products);
       } catch (error) {
         console.error("Error fetching product data:", error);
       }
     };
-
-    // Check if id is available before fetching data
     if (id) {
       fetchProductData();
     }
